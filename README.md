@@ -63,8 +63,6 @@ PortFolio/
 - **AOS Library**: For scroll animations.
 - **Google Fonts**: For custom typography (Poppins and Ubuntu).
 
-## 📸 Screenshots
-*(Add screenshots of your website here if desired. You can take screenshots and drag them into this README on GitHub to auto-upload them.)*
 
 ## 📧 Contact
 Feel free to reach out to me via the contact form on the website or through:
