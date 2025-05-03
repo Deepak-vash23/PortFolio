@@ -68,9 +68,9 @@ PortFolio/
 
 ## 📧 Contact
 Feel free to reach out to me via the contact form on the website or through:
-- **Email**: [Your email address]
+- **Email**: (deepakvashisth8282@gmil.com)
 - **GitHub**: [Deepak-vash23](https://github.com/Deepak-vash23)
-- **LinkedIn**: [Your LinkedIn profile URL]
+- **LinkedIn**: (www.linkedin.com/in/deepak-vashisth)
 
 ## 📜 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. *(Add a LICENSE file if you want to include one.)*
