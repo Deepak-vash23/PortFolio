@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="background-hi">WELCOME</div>
+
+<!--Navbar Section-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1100" >
+                Deepak <span>Vashisth</span>
+            </div>
+            <div class="links">
+                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500"><a href="#">Projects</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="600"><a href="#">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Services</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in" data-aos-duration="2500" >
+                <img src="image.png" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1100" data-aos-delay="700">Hey I'm <span>Deepak</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nam aperiam, minima nobis id vero magni laboriosam ratione cupiditate ex sit at ipsa nesciunt odit molestias distinctio sint, animi possimus.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Deepak-vash23" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/deepak-vashisth/" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1400"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/stellarvibes45/?hl=en" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1500"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in-left" data-aos-duration="1100" data-aos-delay="1700">
+                    <button>Hire me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- About Section-->
+
+<section class="about" id="about">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1100"><span>About Me</span></div>
+        <div class="about-details">
+            <div class="left" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">
+                <img src="image.png" alt=""/>
+            </div>
+            <div class="right">
+                <p class="about-text" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="200">I am <span>Deepak</span> and I am <span>Web Developer & Full Stack Developer</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae tenetur quos animi architecto possimus iusto labore temporibus modi? Itaque eum vero ipsa similique unde aliquam, dolorem error! Nemo, quos ut!</p>
+                <div class="exp-area">
+                    <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
+                        Experience:
+                        <span>5 months</span>
+                    </p>
+                    <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">
+                        Speciality:
+                        <span>Web Developer</span>
+                    </p>
+                    <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">
+                        Address:
+                        <span>Uttar Pradesh, India</span>
+                    </p>
+                    <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="600">
+                        Email:
+                        <span>deepakvashisth8282@gmail.com</span>
+                    </p>
+                    <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="700">
+                        Phone:
+                        <span>+91 86999 60308</span>
+                    </p>
+                    <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="800">
+                        Freelance:
+                        <span>Available</span>
+                    </p>
+                </div>
+                <div class="button" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="900">
+                    <button>View All Projects</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--My Skill Section-->
+<section class="skills" id="skills">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1100"><span>My Skills</span></div>
+        <div class="skills-details">
+            <div class="text">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">Skills Reflect Our Knowledge</div>
+                <p data-aos="flip-down" data-aos-duration="1100" data-aos-delay="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam praesentium ratione, modi eius iusto mollitia voluptatum, consectetur sed obcaecati rerum commodi nisi, deleniti quae earum velit. Maxime distinctio fugiat ex.</p>
+                <div class="experience" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="300">
+                    <div class="num">10</div>
+                    <div class="exp">
+                        Years Of<br/>
+                        Experience
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="400">
+                    <div class="topic">Node.js</div>
+                    <div class="per">50%</div>
+                </div>
+                <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="500">
+                    <div class="topic">Express.js</div>
+                    <div class="per">50%</div>
+                </div>
+                <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="600">
+                    <div class="topic">Python</div>
+                    <div class="per">98%</div>
+                </div>
+                <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="700"> 
+                    <div class="topic">NLP</div>
+                    <div class="per">80%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--My Services Section-->
+<section class="services" id="services">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1100"><span>My Services</span></div>
+        <div class="boxes">
+            <div class="box" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">
+                <div class="icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <div class="topic">Web Development</div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsam explicabo corrupti mollitia blanditiis eum architecto temporibus commodi consectetur reiciendis vitae repellendus tenetur quo ipsa iste voluptate in, molestiae earum?</p>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100">
+                <div class="icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="topic">Web Designing</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas, et, officiis accusamus deserunt beatae eius omnis animi voluptatibus dolor, inventore ea aliquid! Ab cumque omnis repellendus unde, assumenda modi.</p>
+            </div>
+            <div class="box" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="100">
+                <div class="icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="topic">Machine Learning</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas, et, officiis accusamus deserunt beatae eius omnis animi voluptatibus dolor, inventore ea aliquid! Ab cumque omnis repellendus unde, assumenda modi.</p>
+            </div>
+            <div class="box" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="200">
+                <div class="icon">
+                    <i class="devicon-vscode-plain coloured"></i>
+                </div>
+                <div class="topic">VS Code</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas, et, officiis accusamus deserunt beatae eius omnis animi voluptatibus dolor, inventore ea aliquid! Ab cumque omnis repellendus unde, assumenda modi.</p>
+            </div>
+            <div class="box" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="300">
+                <div class="icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="topic">Leadership</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas, et, officiis accusamus deserunt beatae eius omnis animi voluptatibus dolor, inventore ea aliquid! Ab cumque omnis repellendus unde, assumenda modi.</p>
+            </div>
+            <div class="box" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="400">
+                <div class="icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="topic">Problem Solving</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas, et, officiis accusamus deserunt beatae eius omnis animi voluptatibus dolor, inventore ea aliquid! Ab cumque omnis repellendus unde, assumenda modi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--My Projects Section-->
+<section class="projects" id="projects">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1100"><span>My Projects</span></div>
+        <div class="project-container">
+            <div class="project-card" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">
+                <div class="project-img">
+                    <img src="emotion_engine.jpg" alt="Project 1">
+                </div>
+                <div class="project-content">
+                    <h3>Emotion Engine</h3>
+                    <p>An AI-powered mental wellness platform featuring KOKO Ai, a compassionate chatbot that understands emotions, offers self-care advice, and supports users in distress. Built with Node.js, MongoDB, Streamlit, and Cohere, it blends emotional intelligence with modern tech in a seamless, interactive web experience.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Deepak-vash23/Emotion_Engine" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
+                <div class="project-img">
+                    <img src="chat_app.jpg" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <h3>Live Chat Application</h3>
+                    <p>A real-time chat application built using the MERN stack (MongoDB, Express.js, React, Node.js) with Socket.IO for live messaging. Users can sign up, log in, and securely exchange messages. The app includes mobile responsiveness, user privacy controls, and can be deployed on platforms like Render for web access and converted into a desktop application using PWA.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Socket.IO</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Deepak-vash23/fullstack-chat-app" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://fullstack-chat-app-0srx.onrender.com/" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="300">
+                <div class="project-img">
+                    <img src="ML.jpg" alt="Project 3">
+                </div>
+                <div class="project-content">
+                    <h3>ML Project</h3>
+                    <p>This project explores the Iris dataset using various supervised learning models to classify iris species using:<br>
+                        1.Decision Tree <br>
+                        2.K-Nearest Neighbors <br>
+                        3.Linear Regression <br>
+                        4.Logistic Regression <br>
+                        5.Support Vector Machine <br>
+                        
+                        Each model is trained, tested, and evaluated for accuracy and performance, providing a comprehensive understanding of how different algorithms behave on the same dataset.
+                        </p>
+                    <div class="project-tags">
+                        <span>Machine Learning</span>
+                        <span>Python</span>
+                        <span>SVM</span>
+                        <span>KNN</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Deepak-vash23/Datascience_projects/tree/main" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Contact Me-->
+<section class="contact" id="contact">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1100"><span>Contact Me</span></div>
+        <div class="text">
+            <div class="topic" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="100">Have Any Project?</div>
+            <p data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia itaque adipisci harum alias enim numquam ipsum, facere minus fugiat necessitatibus nobis repellendus voluptatum debitis quis tenetur a soluta incidunt sunt!</p>
+        </div>
+        <div class="contact-form-container">
+            <form class="contact-form" action="https://formsubmit.co/deepakvashisth8282@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://deepak-vash23.github.io/PortFolio-main/">
+                <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+                <input type="hidden" name="_template" value="table">
+
+                <label for="name" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300"> 
+                
+                <label for="email" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">
+                
+                <label for="phone" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">
+                
+                <label for="message" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="600">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required data-aos="fade-up" data-aos-duration="1100" data-aos-delay="600"></textarea>
+
+                <button type="submit" class="contact-btn" data-aos="zoom-in-up" data-aos-duration="1100" data-aos-delay="700">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--Footer Section-->
+<footer>
+    <div class="text">
+        <span>Created by <a href="#">Deepak Vashisth</a> | &#169;2025 All Rights Reserved</span>
+    </div>
+</footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:0});
+  </script>
+<script>
+
+    //for hamburg and cancel
+    const menuBtn = document.querySelector(".hamburg");
+    const cancelBtn = document.querySelector(".cancel");
+    const dropdown = document.querySelector(".dropdown");
+
+    menuBtn.onclick = () => {
+        dropdown.classList.add("active");
+        menuBtn.style.display = "none";
+        cancelBtn.style.display = "block";
+    };
+
+    cancelBtn.onclick = () => {
+        dropdown.classList.remove("active");
+        menuBtn.style.display = "block";
+        cancelBtn.style.display = "none";
+    };
+
+
+    //for typewriter effect
+    const roles = ["Web Developer", "Full Stack Developer", "ML Enthusiast", "Tech Lover"];
+    let index = 0;
+    let charIndex = 0;
+    const typewriterText = document.querySelector(".typewriter-text");
+
+    function type() {
+        if (charIndex < roles[index].length) {
+            typewriterText.textContent += roles[index].charAt(charIndex);
+            charIndex++;
+            setTimeout(type, 100);
+        } else {
+            setTimeout(erase, 1500); // wait before erasing
+        }
+    }
+
+    function erase() {
+        if (charIndex > 0) {
+            typewriterText.textContent = roles[index].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(erase, 50);
+        } else {
+            index = (index + 1) % roles.length;
+            setTimeout(type, 500);
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        if (typewriterText) type();
+    });
+
+    // Your other JavaScript code here
+
+</script>
+
+</body>
+</html>
