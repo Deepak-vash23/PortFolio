@@ -7,6 +7,141 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 70px; /* Add padding to account for fixed navbar */
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(2, 2, 2, 0.8); /* Translucent background */
+            backdrop-filter: blur(8px); /* Adds a blur effect to the background */
+            -webkit-backdrop-filter: blur(8px); /* For Safari support */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            padding: 15px 0;
+        }
+
+        /* Adjust the first section to account for fixed navbar */
+        #home {
+            min-height: 100vh;
+            padding-top: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .main-container {
+            width: 100%;
+            min-height: calc(100vh - 80px);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        /* Ensure image is properly sized */
+        .main-container .image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .main-container .image img {
+            max-height: 70vh;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Adjust content spacing */
+        .main-container .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .main-container .image img {
+                max-height: 50vh;
+            }
+        }
+
+        /* Adjust link colors for better visibility */
+        .nav-container .links a {
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        .nav-container .links a:hover {
+            color: #077b32;
+        }
+
+        /* Style for active nav link */
+        .links a.active {
+            color: #077b32 !important;
+        }
+
+        /* Ensure dropdown appears below fixed navbar */
+        .dropdown {
+            position: fixed;
+            top: 70px;
+            width: 100%;
+            z-index: 999;
+            background-color: rgba(2, 2, 2, 0.8);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        /* Adjust logo color */
+        .nav-container .logo {
+            color: #ffffff;
+        }
+
+        .nav-container .logo span {
+            color: #077b32;
+        }
+
+        /* Adjust hamburg icon color */
+        .hamburg {
+            color: #ffffff;
+        }
+
+        /* Services section spacing */
+        .services {
+            padding-top: 40px;
+            margin-top: 50px;
+        }
+
+        /* Ensure consistent spacing between sections */
+        section {
+            margin-bottom: 50px;
+        }
+
+        /* Adjust services boxes container */
+        .services .boxes {
+            padding-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .services {
+                padding-top: 60px;
+                margin-top: 30px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="background-hi">WELCOME</div>
@@ -18,28 +153,28 @@
                 Deepak <span>Vashisth</span>
             </div>
             <div class="links">
-                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200"><a href="#">About</a></div>
-                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300"><a href="#">Skills</a></div>
-                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400"><a href="#">Services</a></div>
-                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500"><a href="#">Projects</a></div>
-                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="600"><a href="#">Contact</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400"><a href="#services">Services</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500"><a href="#projects">Projects</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="600"><a href="#contact">Contact</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
         <div class="dropdown">
             <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Services</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
     </nav>
-    <section>
+    <section id="home">
         <div class="main-container">
             <div class="image" data-aos="zoom-in" data-aos-duration="2500" >
                 <img src="image.png" alt="">
@@ -47,14 +182,14 @@
             <div class="content">
                 <h1 data-aos="fade-left" data-aos-duration="1100" data-aos-delay="700">Hey I'm <span>Deepak</span></h1>
                 <div class="typewriter" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
-                <p data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nam aperiam, minima nobis id vero magni laboriosam ratione cupiditate ex sit at ipsa nesciunt odit molestias distinctio sint, animi possimus.</p>
+                <p data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1100">"From pixels to performance — I build what matters."</p>
                 <div class="social-links">
                     <a href="https://github.com/Deepak-vash23" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/deepak-vashisth/" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1400"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.instagram.com/stellarvibes45/?hl=en" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1500"><i class="fa-brands fa-instagram"></i></a>
                 </div>
                 <div class="btn" data-aos="zoom-in-left" data-aos-duration="1100" data-aos-delay="1700">
-                    <button>Hire me</button>
+                    <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Hire me</button>
                 </div>
             </div>
         </div>
@@ -99,7 +234,7 @@
                     </p>
                 </div>
                 <div class="button" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="900">
-                    <button>View All Projects</button>
+                    <button onclick="window.open('https://github.com/Deepak-vash23', '_blank')">View All Projects</button>
                 </div>
             </div>
         </div>
@@ -113,7 +248,8 @@
         <div class="skills-details">
             <div class="text">
                 <div class="topic" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">Skills Reflect Our Knowledge</div>
-                <p data-aos="flip-down" data-aos-duration="1100" data-aos-delay="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam praesentium ratione, modi eius iusto mollitia voluptatum, consectetur sed obcaecati rerum commodi nisi, deleniti quae earum velit. Maxime distinctio fugiat ex.</p>
+                <p data-aos="flip-down" data-aos-duration="1100" data-aos-delay="200">Proficient in full-stack web development, web designing, and machine learning using tools like VS Code, Node.js,and Python.
+                    Strong leadership and problem-solving skills with experience in team projects, hackathons, and real-world applications.</p>
                 <div class="experience" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="300">
                     <div class="num">10</div>
                     <div class="exp">
@@ -154,42 +290,42 @@
                     <i class="fas fa-desktop"></i>
                 </div>
                 <div class="topic">Web Development</div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsam explicabo corrupti mollitia blanditiis eum architecto temporibus commodi consectetur reiciendis vitae repellendus tenetur quo ipsa iste voluptate in, molestiae earum?</p>
+                <p>Full-stack developer skilled in React, Node.js, Express.js, and databases (MySQL, MongoDB). Built authentication systems and e-learning platforms with clean architecture.</p>
             </div>
             <div class="box" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100">
                 <div class="icon">
                     <i class="fas fa-paint-brush"></i>
                 </div>
                 <div class="topic">Web Designing</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas, et, officiis accusamus deserunt beatae eius omnis animi voluptatibus dolor, inventore ea aliquid! Ab cumque omnis repellendus unde, assumenda modi.</p>
+                <p>Creating responsive, user-friendly interfaces with HTML, CSS, and Tailwind CSS. Focus on modern layouts, accessibility, and cross-device compatibility.</p>
             </div>
             <div class="box" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="100">
                 <div class="icon">
                     <i class="fas fa-project-diagram"></i>
                 </div>
                 <div class="topic">Machine Learning</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas, et, officiis accusamus deserunt beatae eius omnis animi voluptatibus dolor, inventore ea aliquid! Ab cumque omnis repellendus unde, assumenda modi.</p>
+                <p>Experience with ML algorithms using Python libraries (scikit-learn, pandas, NumPy). Worked on regression, classification, and data analysis projects.</p>
             </div>
             <div class="box" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="200">
                 <div class="icon">
-                    <i class="devicon-vscode-plain coloured"></i>
+                    <i class="fas fa-code"></i>
                 </div>
                 <div class="topic">VS Code</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas, et, officiis accusamus deserunt beatae eius omnis animi voluptatibus dolor, inventore ea aliquid! Ab cumque omnis repellendus unde, assumenda modi.</p>
+                <p>Proficient in VS Code with expertise in extensions, Git integration, and debugging tools for enhanced development workflow.</p>
             </div>
             <div class="box" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="300">
                 <div class="icon">
                     <i class="fas fa-user-tie"></i>
                 </div>
                 <div class="topic">Leadership</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas, et, officiis accusamus deserunt beatae eius omnis animi voluptatibus dolor, inventore ea aliquid! Ab cumque omnis repellendus unde, assumenda modi.</p>
+                <p>Team leader experienced in project management, task delegation, and conflict resolution. Strong focus on collaboration and clear communication.</p>
             </div>
             <div class="box" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="400">
                 <div class="icon">
                     <i class="fas fa-search"></i>
                 </div>
                 <div class="topic">Problem Solving</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas, et, officiis accusamus deserunt beatae eius omnis animi voluptatibus dolor, inventore ea aliquid! Ab cumque omnis repellendus unde, assumenda modi.</p>
+                <p>Analytical thinker skilled at breaking down complex problems and implementing efficient, scalable solutions under time constraints.</p>
             </div>
         </div>
     </div>
@@ -225,7 +361,7 @@
                 </div>
                 <div class="project-content">
                     <h3>Live Chat Application</h3>
-                    <p>A real-time chat application built using the MERN stack (MongoDB, Express.js, React, Node.js) with Socket.IO for live messaging. Users can sign up, log in, and securely exchange messages. The app includes mobile responsiveness, user privacy controls, and can be deployed on platforms like Render for web access and converted into a desktop application using PWA.</p>
+                    <p>A real-time chat application built using the MERN stack (MongoDB, Express.js, React, Node.js) with Socket.IO for live messaging. Users can sign up, log in, and securely exchange messages. The app includes user privacy controls, and can be deployed on platforms like Render for web access and converted into a desktop application using PWA.</p>
                     <div class="project-tags">
                         <span>JavaScript</span>
                         <span>React</span>
@@ -305,7 +441,7 @@
 <!--Footer Section-->
 <footer>
     <div class="text">
-        <span>Created by <a href="#">Deepak Vashisth</a> | &#169;2025 All Rights Reserved</span>
+        <span>Created by <a href="#">Deepak Vashisth</a> | &#169; 2025 All Rights Reserved</span>
     </div>
 </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -313,6 +449,32 @@
     AOS.init({offset:0});
   </script>
 <script>
+    // Highlight active section in navbar
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-container .links a');
+
+    function highlightNavLink() {
+        const scrollPosition = window.scrollY + 100; // Offset to account for navbar height
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+            
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + sectionId) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
+    // Add scroll event listener
+    window.addEventListener('scroll', highlightNavLink);
+    window.addEventListener('load', highlightNavLink);
 
     //for hamburg and cancel
     const menuBtn = document.querySelector(".hamburg");
@@ -331,6 +493,14 @@
         cancelBtn.style.display = "none";
     };
 
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('.dropdown .links a').forEach(link => {
+        link.addEventListener('click', () => {
+            dropdown.classList.remove("active");
+            menuBtn.style.display = "block";
+            cancelBtn.style.display = "none";
+        });
+    });
 
     //for typewriter effect
     const roles = ["Web Developer", "Full Stack Developer", "ML Enthusiast", "Tech Lover"];
