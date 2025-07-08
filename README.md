@@ -16,7 +16,7 @@
 
 ## 🚀 Live Demo
 
-Experience the portfolio live: **[deepak-vash23.github.io/PortFolio](https://portfolio-0e1t.onrender.com/)**
+Experience the portfolio live: **[Deepak-Vashisth/PortFolio](https://portfolio-0e1t.onrender.com/)**
 
 ## 🛠️ Technologies Used
 
